@@ -98,7 +98,7 @@ const App = () => {
   // );
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/sapphire-web">
       <main>
         <Navbar />
         <MobNavBarLinks
@@ -112,7 +112,8 @@ const App = () => {
 
         <Routes>
           <Route
-            path="/"
+            exact
+            path="/sapphire-web"
             element={
               <div className={showmenuicon && "fixed"}>
                 <Hero />
