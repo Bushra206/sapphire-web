@@ -11,7 +11,7 @@ import WhatsNewImage6 from "../../assets/Cicular-images/whats-new-images/man-wha
 import WhatsNewImage7 from "../../assets/Cicular-images/whats-new-images/fragrance-what_s-new.avif";
 import WhatsNewImage8 from "../../assets/Cicular-images/whats-new-images/whats_new___home_d9857c45-a5ad-4e38-918d-e480d1306f26.avif";
 //woman images
- import WomanImage1 from "../../assets/Cicular-images/woman-images/unstitched_6d3e02bb-84a1-4f21-90e2-02be6f49ee1d.avif";
+import WomanImage1 from "../../assets/Cicular-images/woman-images/unstitched_6d3e02bb-84a1-4f21-90e2-02be6f49ee1d.avif";
 // import WomanImage1 from "../../assets/Collection-images/woman-images/ReadyToWear/2SDF24V220ST_3_3efe4b37-987c-45b0-9350-55dbaf246974.webp";
 import WomanImage2 from "../../assets/Cicular-images/woman-images/RTW_710118f3-6404-4752-980c-6b8d1ac7a5ad.avif";
 import WomanImage3 from "../../assets/Cicular-images/woman-images/WEST_d81b98e6-8d6e-489c-92fa-153aec423de4.avif";
@@ -22,7 +22,7 @@ import ManImage1 from "../../assets/Cicular-images/man-images/man___unstitched.a
 import ManImage2 from "../../assets/Cicular-images/man-images/Men-stitched_8db9b0f1-9883-49ae-9123-43c6f72d1773.avif";
 
 function CircularArrayProvider(props) {
-  console.log("CircularArrayProvider component rendered"); // Add this line
+  // console.log("CircularArrayProvider component rendered"); // Add this line
   let CircularFullData = {
     WhatsNew: [
       {
@@ -79,27 +79,27 @@ function CircularArrayProvider(props) {
       {
         img: WomanImage1,
         title_html: <span>Unstitched</span>,
-        href_link:"/Collection/unstitched"
+        href_link: "/Collection/unstitched",
       },
       {
         img: WomanImage2,
         title_html: <span>Ready To Wear</span>,
-         href_link:"/Collection/ready-to-wear"
+        href_link: "/Collection/ready-to-wear",
       },
       {
         img: WomanImage3,
         title_html: <span> West</span>,
-         href_link:"/Collection/west"
+        href_link: "/Collection/west",
       },
       {
         img: WomanImage4,
         title_html: <span>Sleepwear</span>,
-         href_link:"/Collection/sleepwear"
+        href_link: "/Collection/sleepwear",
       },
       {
         img: WomanImage5,
         title_html: <span>Modest Wear</span>,
-         href_link:"/Collection/modestwear"
+        href_link: "/Collection/modestwear",
       },
     ],
     Man: [
@@ -319,7 +319,7 @@ function CircularArrayProvider(props) {
   };
 
   const [circularData, setCircularData] = useState(CircularFullData);
-  console.log("CircularData:", circularData); // Add this line
+  // console.log("CircularData:", circularData); // Add this line
 
   return (
     <div>

@@ -31,49 +31,61 @@ function WhatsNew() {
     });
   }, []);
 
-  let WhatsNew_data=[
-      {
-        img:WhatsNewImage1,
-        title_html:<div>Botanical Bliss <br /> Ready to Wear</div>
-      },
-      {
-        img:WhatsNewImage2,
-        title_html:<div>Signature <br/> Unstitched</div>
-      },
-      {
-        img:WhatsNewImage3,
-        title_html:<div>Mommy &amp; Me</div>
-      },
-      {
-        img:WhatsNewImage4,
-        title_html:<div>The Resort Edit <br /> WEST</div>
-      },
-      {
-        img:WhatsNewImage5,
-        title_html:<div>Chikankari <br /> Ready to Wear</div>
-      },
-      {
-        img:WhatsNewImage6,
-        title_html:<div>Men's Stitched <br />  Summer New Arrivals</div>
-      },
-      {
-        img:WhatsNewImage7,
-        title_html:<div>Fragrances</div>
-      },
-      {img:WhatsNewImage8,
-        title_html:<div>Home</div>
-      },
-
-    ]
-
-
-
+  let WhatsNew_data = [
+    {
+      img: WhatsNewImage1,
+      title_html: (
+        <div>
+          Botanical Bliss <br /> Ready to Wear
+        </div>
+      ),
+    },
+    {
+      img: WhatsNewImage2,
+      title_html: (
+        <div>
+          Signature <br /> Unstitched
+        </div>
+      ),
+    },
+    {
+      img: WhatsNewImage3,
+      title_html: <div>Mommy &amp; Me</div>,
+    },
+    {
+      img: WhatsNewImage4,
+      title_html: (
+        <div>
+          The Resort Edit <br /> WEST
+        </div>
+      ),
+    },
+    {
+      img: WhatsNewImage5,
+      title_html: (
+        <div>
+          Chikankari <br /> Ready to Wear
+        </div>
+      ),
+    },
+    {
+      img: WhatsNewImage6,
+      title_html: (
+        <div>
+          Men's Stitched <br /> Summer New Arrivals
+        </div>
+      ),
+    },
+    {
+      img: WhatsNewImage7,
+      title_html: <div>Fragrances</div>,
+    },
+    { img: WhatsNewImage8, title_html: <div>Home</div> },
+  ];
 
   return (
     <>
-      <div
-        className="whats-new bg-[#fff] px-8 py-14 text-center flex justify-center items-center gap-10 w-full "
-      >
+      <div className="whats-new bg-[#fff] px-8 py-14 text-center flex justify-center items-center gap-10 w-full ">
         <h1
           data-aos="fade-up"
           className=" capitalize tracking-wide leading-tight font-medium tablet:font-normal mobile:text-1xl tablet:text-2xl sm:text-3xl  text-left"
@@ -81,49 +93,50 @@ function WhatsNew() {
           WHAT'S <br /> NEW
         </h1>
 
-          <Swiper
-            slidesPerView="auto"
-            centeredSlides={false}
-            spaceBetween={8}
-            grabCursor={true}
-            //   pagination={{
-            //     clickable: true,
-            //   }}
-            modules={[Pagination]}
-            className="mySwiper "
-          >
-            {WhatsNew_data.map((item, index) => {
-              return (
-                <SwiperSlide className="circular-slider-slide w-[92px] h-[145px] sm:w-[120px] sm:h-[190px]">
-                  <div className="whats-new-slide flex flex-col justify-center items-center gap-3 ">
-                    <a href="">
-                      <img
-                        className="circular-slider-image border-2 rounded-full w-[92px] h-[92px] sm:w-[120px] sm:h-[120px]"
-                        src={item.img}
-                        alt=""
-                        data-aos="fade-up"
-                      />
-                    </a>
-                    <a href="">
-                      <p
-                        className="cstm-title-whats-new m-0 p-0 text-[12px] text-[#000] leading-5 w-[92px] h-[43px] sm:w-[120px] sm:h-[32px]"
-                        data-aos="fade-up"
-                      >
-                        {item.title_html}
-                        {/* {WhatsNew[0].title_html}{{ __html: WhatsNew[0].title_html }} */}
-                      </p>
-                    </a>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-
+        <Swiper
+          slidesPerView="auto"
+          centeredSlides={false}
+          spaceBetween={8}
+          grabCursor={true}
+          //   pagination={{
+          //     clickable: true,
+          //   }}
+          modules={[Pagination]}
+          className="mySwiper "
+        >
+          {WhatsNew_data.map((item, index) => {
+            return (
+              <SwiperSlide
+                key={index}
+                className="circular-slider-slide w-[92px] h-[145px] sm:w-[120px] sm:h-[190px]"
+              >
+                <div className="whats-new-slide flex flex-col justify-center items-center gap-3 ">
+                  <a href="">
+                    <img
+                      className="circular-slider-image border-2 rounded-full w-[92px] h-[92px] sm:w-[120px] sm:h-[120px]"
+                      src={item.img}
+                      alt=""
+                      data-aos="fade-up"
+                    />
+                  </a>
+                  <a href="">
+                    <p
+                      className="cstm-title-whats-new m-0 p-0 text-[12px] text-[#000] leading-5 w-[92px] h-[43px] sm:w-[120px] sm:h-[32px]"
+                      data-aos="fade-up"
+                    >
+                      {item.title_html}
+                      {/* {WhatsNew[0].title_html}{{ __html: WhatsNew[0].title_html }} */}
+                    </p>
+                  </a>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </>
   );
 }
-
 
 export default WhatsNew;
 

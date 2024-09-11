@@ -56,7 +56,7 @@ import woman_mdstw_2c from "../../assets/Collection-images/woman-images/ModestWe
 import woman_mdstw_2d from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2d.webp";
 
 function CardsArrayProvider(props) {
-  console.log("CircularArrayProvider component rendered"); // Add this line
+  // console.log("CircularArrayProvider component rendered"); // Add this line
   let cards_initial_data = [
     {
       id: "woman_rtw_1",
@@ -66,8 +66,8 @@ function CardsArrayProvider(props) {
       type: "rtw",
       collection: "Summer New Arrivals",
       price: 3590,
-      stock:3,
-       size: ["S", "M", "L", "XL"],
+      stock: 3,
+      size: ["S", "M", "L", "XL"],
       // size: [1,2,3,4],
       catagory: "woman",
       detail: (
@@ -117,7 +117,7 @@ function CardsArrayProvider(props) {
       type: "rtw",
       collection: "Summer New Arrivals",
       price: 3590,
-      stock:5,
+      stock: 5,
       size: ["S", "M", "L", "XL"],
       catagory: "woman",
       detail: (
@@ -165,7 +165,7 @@ function CardsArrayProvider(props) {
       type: "unst",
       collection: "Intermix '24",
       price: 7590,
-      stock:2,
+      stock: 2,
       catagory: "woman",
       detail: (
         <div className="product-full-detail">
@@ -238,7 +238,7 @@ function CardsArrayProvider(props) {
       type: "unst",
       collection: "Intermix '24",
       price: 6590,
-      stock:6,
+      stock: 6,
       catagory: "woman",
       detail: (
         <div className="product-full-detail">
@@ -311,7 +311,7 @@ function CardsArrayProvider(props) {
       type: "west",
       collection: "Summer New Arrivals",
       price: 4990,
-      stock:4,
+      stock: 4,
       size: ["S", "M", "L", "XL"],
       catagory: "woman",
     },
@@ -322,7 +322,7 @@ function CardsArrayProvider(props) {
       type: "west",
       collection: "Summer New Arrivals",
       price: 3490,
-      stock:7,
+      stock: 7,
       size: ["S", "M", "L", "XL"],
       catagory: "woman",
     },
@@ -333,7 +333,7 @@ function CardsArrayProvider(props) {
       type: "slpw",
       // collection: "Summer New Arrivals",
       price: 4490,
-      stock:1,
+      stock: 1,
       size: ["S", "M", "L", "XL"],
       catagory: "woman",
     },
@@ -344,7 +344,7 @@ function CardsArrayProvider(props) {
       type: "slpw",
       // collection: "Summer New Arrivals",
       price: 5590,
-      stock:3,
+      stock: 3,
       size: ["S", "M", "L", "XL"],
       catagory: "woman",
     },
@@ -355,7 +355,7 @@ function CardsArrayProvider(props) {
       type: "mdstw",
       // collection: "Summer New Arrivals",
       price: 7990,
-      stock:5,
+      stock: 5,
       size: ["S", "M", "L", "XL"],
       catagory: "woman",
     },
@@ -366,7 +366,7 @@ function CardsArrayProvider(props) {
       type: "mdstw",
       // collection: "Summer New Arrivals",
       price: 16990,
-      stock:5,
+      stock: 5,
       size: ["S", "M", "L", "XL"],
       catagory: "woman",
     },
@@ -381,12 +381,14 @@ function CardsArrayProvider(props) {
     filteredMdstwData: [],
   });
   const [countProduct, setCountProduct] = useState(1);
-  console.log("CircularData:", cardsArrayData); // Add this line
+  // console.log("CircularData:", cardsArrayData); // Add this line
   // dispatch({type:'rtw', payload:cards_initial_data});
 
   return (
     <div>
-      <contextcreate.Provider value={{ cardsArrayData, dispatch,countProduct, setCountProduct }}>
+      <contextcreate.Provider
+        value={{ cardsArrayData, dispatch, countProduct, setCountProduct }}
+      >
         {props.children}
       </contextcreate.Provider>
     </div>

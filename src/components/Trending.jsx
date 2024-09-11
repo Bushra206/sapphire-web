@@ -24,8 +24,8 @@ import img5 from "../assets/trending/2STSDW24V25W_2_199efd62-aed4-45cd-b28c-9628
 import img6 from "../assets/trending/02STDYW24V25_1.webp";
 import img7 from "../assets/trending/2SDF24V219ST_1_fd1cbf02-3d4c-43a9-9810-064a5e4be738.webp";
 import img8 from "../assets/trending/02STSDW24V24_2.webp";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 //import components
 import Cards from "./Cards";
 
@@ -103,75 +103,63 @@ let Trending = () => {
       </h3>
 
       <Swiper
-      className="w-full"
-      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Zoom]}
-      spaceBetween={6} // default space between slides
-      slidesPerView="auto"
-      // autoplay={{
-      //   delay: 3000, // Slide will change every 3 seconds
-      //   disableOnInteraction: false, // Keeps autoplay running even after user interaction
-      // }}
-      loop
-      navigation
-      zoom
-      grabCursor={true}
-      breakpoints={{
-        md: {
-          slidesPerView: 4, // show 4 slides on medium screens
-          spaceBetween: 6, // keep space between slides to 6
-        },
-        iphone: {
-          slidesPerView: 2, // show 2 slides on small screens
-          spaceBetween: 6, // keep space between slides to 6
-          centeredSlides: true,
-        },
-      }}
-    >
-      {trending_data.map((data, index) => {
-        return (
-          <SwiperSlide key={index} className="w-[49.25%] md:w-[24.5%]">
-            <div className="flex flex-col gap-3" data-aos="fade-up">
-              <a href="">
-                <img src={data.img} alt="hyy" />
-              </a>
+        className="w-full"
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Zoom]}
+        spaceBetween={6} // default space between slides
+        slidesPerView="auto"
+        // autoplay={{
+        //   delay: 3000, // Slide will change every 3 seconds
+        //   disableOnInteraction: false, // Keeps autoplay running even after user interaction
+        // }}
+        loop
+        navigation
+        zoom
+        grabCursor={true}
+        breakpoints={{
+          md: {
+            slidesPerView: 4, // show 4 slides on medium screens
+            spaceBetween: 6, // keep space between slides to 6
+          },
+          iphone: {
+            slidesPerView: 2, // show 2 slides on small screens
+            spaceBetween: 6, // keep space between slides to 6
+            centeredSlides: true,
+          },
+        }}
+      >
+        {trending_data.map((data, index) => {
+          return (
+            <SwiperSlide key={index} className="w-[49.25%] md:w-[24.5%]">
+              <div className="flex flex-col gap-3" data-aos="fade-up">
+                <a href="">
+                  <img src={data.img} alt="hyy" />
+                </a>
 
-              <div className="dress-detail flex justify-between items-center">
-                <div className="dress-dcrp flex flex-col text-left w-[55%]">
-                  <a href="">
-                    <h5 className="text-xs font-semibold">{data.title}</h5>
-                  </a>
-                  <p className="text-xs">{data.collection}</p>
-                  <p className="text-xs">Rs.{data.price.toLocaleString()}</p>
-                </div>
+                <div className="dress-detail flex justify-between items-center">
+                  <div className="dress-dcrp flex flex-col text-left w-[55%]">
+                    <a href="">
+                      <h5 className="text-xs font-semibold">{data.title}</h5>
+                    </a>
+                    <p className="text-xs">{data.collection}</p>
+                    <p className="text-xs">Rs.{data.price.toLocaleString()}</p>
+                  </div>
 
-                <div className="add-to-bag  w-[35%] ">
-                  <div className="w-[80%] h-[30px] bg-black rounded-md flex justify-center items-center">
-                    <IoBagHandleOutline className="text-white text-base text-center" />
+                  <div className="add-to-bag  w-[35%] ">
+                    <div className="w-[80%] h-[30px] bg-black rounded-md flex justify-center items-center">
+                      <IoBagHandleOutline className="text-white text-base text-center" />
+                    </div>
                   </div>
                 </div>
               </div>
-
-
-            </div>
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
-
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </div>
   );
 };
 
 export default Trending;
-
-
-
-
-
-
-
-
-
 
 // <Swiper
 // modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Zoom]}
@@ -216,14 +204,12 @@ export default Trending;
 //             <p className="text-xs">Rs.{data.price.toLocaleString()}</p>
 //           </div>
 
-
 //           <div className="add-to-bag  w-[35%] ">
 //             <div className="w-[80%] h-[30px] bg-black rounded-md flex justify-center items-center">
 //               <IoBagHandleOutline className="text-white text-base text-center" />
 //             </div>
 //           </div>
 //         </div>
-
 
 //       </div>
 //     </SwiperSlide>

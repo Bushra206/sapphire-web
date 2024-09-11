@@ -38,12 +38,11 @@ import CircularArrayProvider from "./components/Context/CircularArrayProvider";
 import Unstitched from "./components/Collection-details/woman/Unstitched";
 
 const App = () => {
-
-  const [showmenuicon,setShowMenuIcon]=useState(false);
+  const [showmenuicon, setShowMenuIcon] = useState(false);
   const handleMenuClick = () => {
-    console.log('handleMenuClick called');
+    console.log("handleMenuClick called");
     setShowMenuIcon(!showmenuicon);
-    console.log('showmenuicon (after handleMenuClick):', showmenuicon);
+    console.log("showmenuicon (after handleMenuClick):", showmenuicon);
   };
 
   // return (
@@ -102,8 +101,14 @@ const App = () => {
     <BrowserRouter>
       <main>
         <Navbar />
-        <MobNavBarLinks showmenuicon={showmenuicon} setShowMenuIcon={setShowMenuIcon}/>
-        <MobNavBar showmenuicon={showmenuicon} setShowMenuIcon={setShowMenuIcon} />
+        <MobNavBarLinks
+          showmenuicon={showmenuicon}
+          setShowMenuIcon={setShowMenuIcon}
+        />
+        <MobNavBar
+          showmenuicon={showmenuicon}
+          setShowMenuIcon={setShowMenuIcon}
+        />
 
         <Routes>
           <Route
@@ -115,7 +120,6 @@ const App = () => {
                 <ShopByCatagory />
                 <Trending />
               </div>
-
             }
           />
           {/* <Route path="/Collection/woman" element={<Woman />} />
@@ -132,17 +136,14 @@ const App = () => {
             <Route path="sleepwear" element={<SleepWear />} />
             <Route path="modestwear" element={<ModestWear />} />
           </Route>
-          <Route
-            path= "singleproduct/:id"
-            element={<SingleProduct />}
-          />
+          <Route path="singleproduct/:id" element={<SingleProduct />} />
           {/* <Route path="/Collection/man" element={<Man/>} />
           <Route path="/Collection/kids" element={<Kids />} />
           <Route path="/Collection/beauty" element={<Beauty />} />
           <Route path="/Collection/accessories" element={<Accessories />} />
           <Route path="/Collection/home" element={<Home />} /> */}
           <Route path="/random" element={<Example />} />
-          <Route path="/cart" element={<Cart/>} />
+          <Route path="/cart" element={<Cart />} />
           /* <Route path="*" element={<ErrorPage />} /> */
         </Routes>
 
