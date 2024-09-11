@@ -59,58 +59,59 @@ function CartReducer(cartstate, action) {
   }
   //SET_DECRENMENT
   if (action.type === "SET_DECRENMENT") {
-    console.log("decrese button clicked 2",action.payload.productIdInCart)
-    let updatedproduct=cartstate.cart.map((currelem) => {
-       if (currelem.id === action.payload.productIdInCart) {
+    console.log("decrese button clicked 2", action.payload.productIdInCart);
+    let updatedproduct = cartstate.cart.map((currelem) => {
+      if (currelem.id === action.payload.productIdInCart) {
         console.log("currelem", currelem);
-        let decrementCountProduct=currelem.countProduct-1
-        if(decrementCountProduct<1){
-          decrementCountProduct=1
+        let decrementCountProduct = currelem.countProduct - 1;
+        if (decrementCountProduct < 1) {
+          decrementCountProduct = 1;
         }
-          return{
-            ...currelem,
-            countProduct:decrementCountProduct
-          }
-        }
-         else {return currelem};
-      //  }
-    });
-    return {...cartstate,cart:updatedproduct}
-  }
-  //SET_INCRENMENT
-  if(action.type==="SET_INCRENMENT"){
-    let updatedproduct=cartstate.cart.map((currelem)=>{
-      if(currelem.id===action.payload.productIdInCart){
-        let incrementCountProduct=currelem.countProduct+1;
-        if(incrementCountProduct>currelem.max){
-          incrementCountProduct=currelem.max;
-        }
-        return {...currelem,countProduct:incrementCountProduct}
-      }
-      else{
+        return {
+          ...currelem,
+          countProduct: decrementCountProduct,
+        };
+      } else {
         return currelem;
       }
-    })
-    return {...cartstate,cart:updatedproduct}
+      //  }
+    });
+    return { ...cartstate, cart: updatedproduct };
+  }
+  //SET_INCRENMENT
+  if (action.type === "SET_INCRENMENT") {
+    let updatedproduct = cartstate.cart.map((currelem) => {
+      if (currelem.id === action.payload.productIdInCart) {
+        let incrementCountProduct = currelem.countProduct + 1;
+        if (incrementCountProduct > currelem.max) {
+          incrementCountProduct = currelem.max;
+        }
+        return { ...currelem, countProduct: incrementCountProduct };
+      } else {
+        return currelem;
+      }
+    });
+    return { ...cartstate, cart: updatedproduct };
   }
   //cart total item
-  if(action.type==="CART_TOTAL_ITEM"){
-    let updatedcarttotal=cartstate.cart.reduce((acc,currelem)=>{
-          acc=acc+currelem.countProduct;
-          return acc;
-    },0)
-    return {...cartstate,total_item:updatedcarttotal}
+  if (action.type === "CART_TOTAL_ITEM") {
+    let updatedcarttotal = cartstate?.cart?.reduce((acc, currelem) => {
+      acc = acc + currelem.countProduct;
+      return acc;
+    }, 0);
+    return { ...cartstate, total_item: updatedcarttotal };
   }
   //cart total amount
-  if(action.type=="CART_TOTAL_AMOUNT"){
-    let updatedcartamount=cartstate.cart.reduce((acc,currelem)=>{
-      let total=currelem.price*currelem.countProduct
-      acc=acc+total;
+  if (action.type == "CART_TOTAL_AMOUNT") {
+    let updatedcartamount = cartstate?.cart?.reduce((acc, currelem) => {
+      let total = currelem.price * currelem.countProduct;
+      acc = acc + total;
       return acc;
-    },0)
+    }, 0);
     return {
-      ...cartstate,total_amount:updatedcartamount
-    }
+      ...cartstate,
+      total_amount: updatedcartamount,
+    };
   }
   return cartstate;
 }
