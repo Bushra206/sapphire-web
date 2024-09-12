@@ -28,7 +28,7 @@ import Example from "./components/Products/random";
 // import Cards from "./components/Cards";
 import WhatsNew from "./components/WhatsNew";
 //routing
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 // import { GlobalStyle } from "./components/GlobalStyle";
 
 //context
@@ -98,7 +98,7 @@ const App = () => {
   // );
 
   return (
-    <BrowserRouter basename="/sapphire-web">
+    <HashRouter basename="/sapphire-web">
       <main>
         <Navbar />
         <MobNavBarLinks
@@ -150,7 +150,7 @@ const App = () => {
 
         {/* <Footer /> */}
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
