@@ -5,18 +5,18 @@ export const useCartContextHook = () => {
   const cartcontextuse = useContext(cartcontextcreate);
   return cartcontextuse;
 };
-function getLocalCartData() {
-  let localcartdata = localStorage.getItem("sapphireCart");
-  if (localcartdata?.length === 0) {
-    return [];
-  } else {
-    return JSON.parse(localcartdata);
-  }
-  // return []
-}
+// function getLocalCartData() {
+//   let localcartdata = localStorage.getItem("sapphireCart");
+//   if (localcartdata?.length === 0) {
+//     return [];
+//   } else {
+//     return JSON.parse(localcartdata);
+//   }
+
+// }
 function CartDataProvider(props) {
   let initialstate = {
-    cart: getLocalCartData(),
+    cart: [],
     total_item: 0,
     total_amount: 0,
     shipping_fee: 5000,
@@ -45,7 +45,7 @@ function CartDataProvider(props) {
   };
   //storing cart dsata in local storage
   useEffect(() => {
-    localStorage.setItem("sapphireCart", JSON.stringify(cartstate.cart));
+   // localStorage.setItem("sapphireCart", JSON.stringify(cartstate.cart));
     dispatch({ type: "CART_TOTAL_ITEM" });
     dispatch({ type: "CART_TOTAL_AMOUNT" });
   }, [cartstate.cart]);
