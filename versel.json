@@ -3,6 +3,10 @@
     {
       "source": "/(.*)",
       "destination": "/index.html"
+    },
+    {
+      "source": "/singleproduct/:id*",
+      "destination": "/index.html"
     }
   ]
 }
