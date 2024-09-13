@@ -1,12 +1,10 @@
 {
   "name": "sapphire-web",
-  "homepage": "https://Bushra206.github.io/sapphire-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -36,3 +34,4 @@
     "vite": "^5.3.4"
   }
 }
+
