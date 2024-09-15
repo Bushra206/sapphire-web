@@ -8,52 +8,52 @@ export const useCardContextHook = () => {
 };
 //////importing women collection images
 //RTW
-import woman_rtw_1a from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1a.webp";
-import woman_rtw_1b from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1b.webp";
-import woman_rtw_1c from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1c.webp";
-import woman_rtw_1d from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1d.webp";
-import woman_rtw_1e from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1d.webp";
-import woman_rtw_1f from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1d.webp";
-import woman_rtw_2a from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_2/woman_rtw_2a.webp";
-import woman_rtw_2b from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_2/woman_rtw_2b.webp";
-import woman_rtw_2c from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_2/woman_rtw_2c.webp";
-import woman_rtw_2d from "../../assets/Collection-images/woman-images/ReadyToWear/woman_rtw_2/woman_rtw_2d.webp";
+import woman_rtw_1a from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1a.webp";
+import woman_rtw_1b from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1b.webp";
+import woman_rtw_1c from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1c.webp";
+import woman_rtw_1d from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1d.webp";
+import woman_rtw_1e from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1d.webp";
+import woman_rtw_1f from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_1/woman_rtw_1d.webp";
+import woman_rtw_2a from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_2/woman_rtw_2a.webp";
+import woman_rtw_2b from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_2/woman_rtw_2b.webp";
+import woman_rtw_2c from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_2/woman_rtw_2c.webp";
+import woman_rtw_2d from "../../../public/assets/Collection-images/woman-images/ReadyToWear/woman_rtw_2/woman_rtw_2d.webp";
 //UNSTICHED
-import woman_unst_1a from "../../assets/Collection-images/woman-images/Unstitched/woman_unst_1/woman_unst_1a.webp";
-import woman_unst_1b from "../../assets/Collection-images/woman-images/Unstitched/woman_unst_1/woman_unst_1b.webp";
-import woman_unst_1c from "../../assets/Collection-images/woman-images/Unstitched/woman_unst_1/woman_unst_1c.webp";
-import woman_unst_1d from "../../assets/Collection-images/woman-images/Unstitched/woman_unst_1/woman_unst_1d.webp";
-import woman_unst_2a from "../../assets/Collection-images/woman-images/Unstitched/woman_unst_2/woman_unst_2a.webp";
-import woman_unst_2b from "../../assets/Collection-images/woman-images/Unstitched/woman_unst_2/woman_unst_2b.webp";
-import woman_unst_2c from "../../assets/Collection-images/woman-images/Unstitched/woman_unst_2/woman_unst_2c.webp";
-import woman_unst_2d from "../../assets/Collection-images/woman-images/Unstitched/woman_unst_2/woman_unst_2d.webp";
+import woman_unst_1a from "../../../public/assets/Collection-images/woman-images/Unstitched/woman_unst_1/woman_unst_1a.webp";
+import woman_unst_1b from "../../../public/assets/Collection-images/woman-images/Unstitched/woman_unst_1/woman_unst_1b.webp";
+import woman_unst_1c from "../../../public/assets/Collection-images/woman-images/Unstitched/woman_unst_1/woman_unst_1c.webp";
+import woman_unst_1d from "../../../public/assets/Collection-images/woman-images/Unstitched/woman_unst_1/woman_unst_1d.webp";
+import woman_unst_2a from "../../../public/assets/Collection-images/woman-images/Unstitched/woman_unst_2/woman_unst_2a.webp";
+import woman_unst_2b from "../../../public/assets/Collection-images/woman-images/Unstitched/woman_unst_2/woman_unst_2b.webp";
+import woman_unst_2c from "../../../public/assets/Collection-images/woman-images/Unstitched/woman_unst_2/woman_unst_2c.webp";
+import woman_unst_2d from "../../../public/assets/Collection-images/woman-images/Unstitched/woman_unst_2/woman_unst_2d.webp";
 //WEST
-import woman_west_1a from "../../assets/Collection-images/woman-images/West/woman_west_1/woman_west_1a.webp";
-import woman_west_1b from "../../assets/Collection-images/woman-images/West/woman_west_1/woman_west_1b.webp";
-import woman_west_1c from "../../assets/Collection-images/woman-images/West/woman_west_1/woman_west_1c.webp";
-import woman_west_1d from "../../assets/Collection-images/woman-images/West/woman_west_1/woman_west_1d.webp";
-import woman_west_2a from "../../assets/Collection-images/woman-images/West/woman_west_2/woman_west_2a.webp";
-import woman_west_2b from "../../assets/Collection-images/woman-images/West/woman_west_2/woman_west_2b.webp";
-import woman_west_2c from "../../assets/Collection-images/woman-images/West/woman_west_2/woman_west_2c.webp";
-import woman_west_2d from "../../assets/Collection-images/woman-images/West/woman_west_2/woman_west_2d.webp";
+import woman_west_1a from "../../../public/assets/Collection-images/woman-images/West/woman_west_1/woman_west_1a.webp";
+import woman_west_1b from "../../../public/assets/Collection-images/woman-images/West/woman_west_1/woman_west_1b.webp";
+import woman_west_1c from "../../../public/assets/Collection-images/woman-images/West/woman_west_1/woman_west_1c.webp";
+import woman_west_1d from "../../../public/assets/Collection-images/woman-images/West/woman_west_1/woman_west_1d.webp";
+import woman_west_2a from "../../../public/assets/Collection-images/woman-images/West/woman_west_2/woman_west_2a.webp";
+import woman_west_2b from "../../../public/assets/Collection-images/woman-images/West/woman_west_2/woman_west_2b.webp";
+import woman_west_2c from "../../../public/assets/Collection-images/woman-images/West/woman_west_2/woman_west_2c.webp";
+import woman_west_2d from "../../../public/assets/Collection-images/woman-images/West/woman_west_2/woman_west_2d.webp";
 //SLEEPWEAR
-import woman_slpw_1a from "../../assets/Collection-images/woman-images/Sleepwear/woman_slpw_1/woman_slpw_1a.webp";
-import woman_slpw_1b from "../../assets/Collection-images/woman-images/Sleepwear/woman_slpw_1/woman_slpw_1b.webp";
-import woman_slpw_1c from "../../assets/Collection-images/woman-images/Sleepwear/woman_slpw_1/woman_slpw_1c.webp";
-import woman_slpw_1d from "../../assets/Collection-images/woman-images/Sleepwear/woman_slpw_1/woman_slpw_1d.webp";
-import woman_slpw_2a from "../../assets/Collection-images/woman-images/Sleepwear/woman_slpw_2/woman_slpw_2a.webp";
-import woman_slpw_2b from "../../assets/Collection-images/woman-images/Sleepwear/woman_slpw_2/woman_slpw_2b.webp";
-import woman_slpw_2c from "../../assets/Collection-images/woman-images/Sleepwear/woman_slpw_2/woman_slpw_2c.webp";
-import woman_slpw_2d from "../../assets/Collection-images/woman-images/Sleepwear/woman_slpw_2/woman_slpw_2d.webp";
+import woman_slpw_1a from "../../../public/assets/Collection-images/woman-images/Sleepwear/woman_slpw_1/woman_slpw_1a.webp";
+import woman_slpw_1b from "../../../public/assets/Collection-images/woman-images/Sleepwear/woman_slpw_1/woman_slpw_1b.webp";
+import woman_slpw_1c from "../../../public/assets/Collection-images/woman-images/Sleepwear/woman_slpw_1/woman_slpw_1c.webp";
+import woman_slpw_1d from "../../../public/assets/Collection-images/woman-images/Sleepwear/woman_slpw_1/woman_slpw_1d.webp";
+import woman_slpw_2a from "../../../public/assets/Collection-images/woman-images/Sleepwear/woman_slpw_2/woman_slpw_2a.webp";
+import woman_slpw_2b from "../../../public/assets/Collection-images/woman-images/Sleepwear/woman_slpw_2/woman_slpw_2b.webp";
+import woman_slpw_2c from "../../../public/assets/Collection-images/woman-images/Sleepwear/woman_slpw_2/woman_slpw_2c.webp";
+import woman_slpw_2d from "../../../public/assets/Collection-images/woman-images/Sleepwear/woman_slpw_2/woman_slpw_2d.webp";
 //MODESTWEAR
-import woman_mdstw_1a from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_1/woman_mdstw_1a.webp";
-import woman_mdstw_1b from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_1/woman_mdstw_1b.webp";
-import woman_mdstw_1c from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_1/woman_mdstw_1c.webp";
-import woman_mdstw_1d from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_1/woman_mdstw_1d.webp";
-import woman_mdstw_2a from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2a.webp";
-import woman_mdstw_2b from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2b.webp";
-import woman_mdstw_2c from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2c.webp";
-import woman_mdstw_2d from "../../assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2d.webp";
+import woman_mdstw_1a from "../../../public/assets/Collection-images/woman-images/ModestWear/woman_mdstw_1/woman_mdstw_1a.webp";
+import woman_mdstw_1b from "../../../public/assets/Collection-images/woman-images/ModestWear/woman_mdstw_1/woman_mdstw_1b.webp";
+import woman_mdstw_1c from "../../../public/assets/Collection-images/woman-images/ModestWear/woman_mdstw_1/woman_mdstw_1c.webp";
+import woman_mdstw_1d from "../../../public/assets/Collection-images/woman-images/ModestWear/woman_mdstw_1/woman_mdstw_1d.webp";
+import woman_mdstw_2a from "../../../public/assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2a.webp";
+import woman_mdstw_2b from "../../../public/assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2b.webp";
+import woman_mdstw_2c from "../../../public/assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2c.webp";
+import woman_mdstw_2d from "../../../public/assets/Collection-images/woman-images/ModestWear/woman_mdstw_2/woman_mdstw_2d.webp";
 
 function CardsArrayProvider(props) {
   // console.log("CircularArrayProvider component rendered"); // Add this line

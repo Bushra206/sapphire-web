@@ -8,15 +8,15 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/zoom";
 //images
-import img1 from "../assets/shop-by-catagory/sbc-unstitched_0449fee1-5de7-4538-ab7d-b7f283abab1d.webp";
-import img2 from "../assets/shop-by-catagory/sbc-RTW_37f6bfef-e209-48e2-ad23-917c57a1f031.webp";
-import img3 from "../assets/shop-by-catagory/sbc-menswear.webp";
-import img4 from "../assets/shop-by-catagory/sbc-west_aae3beb4-5de7-4708-94a0-b590dbc1f04d.webp";
-import img5 from "../assets/shop-by-catagory/sbc-kids_fe3a6287-800c-4e7a-acbf-e2c08776791b.webp";
-import img6 from "../assets/shop-by-catagory/sbc-fragrance.webp";
-import img7 from "../assets/shop-by-catagory/sbc-modest-wear_b036d0ea-9609-44bb-a2f8-f1c79aa1ed33.webp";
-import img8 from "../assets/shop-by-catagory/sbc-home_8532312c-cad4-4121-a657-3206a4af4eae.webp";
-import img9 from "../assets/shop-by-catagory/sbc-accessories_7ae208fe-1be3-4922-add6-3b7956108ce1.webp";
+import img1 from "../../public/assets/shop-by-catagory/sbc-unstitched_0449fee1-5de7-4538-ab7d-b7f283abab1d.webp";
+import img2 from "../../public/assets/shop-by-catagory/sbc-RTW_37f6bfef-e209-48e2-ad23-917c57a1f031.webp";
+import img3 from "../../public/assets/shop-by-catagory/sbc-menswear.webp";
+import img4 from "../../public/assets/shop-by-catagory/sbc-west_aae3beb4-5de7-4708-94a0-b590dbc1f04d.webp";
+import img5 from "../../public/assets/shop-by-catagory/sbc-kids_fe3a6287-800c-4e7a-acbf-e2c08776791b.webp";
+import img6 from "../../public/assets/shop-by-catagory/sbc-fragrance.webp";
+import img7 from "../../public/assets/shop-by-catagory/sbc-modest-wear_b036d0ea-9609-44bb-a2f8-f1c79aa1ed33.webp";
+import img8 from "../../public/assets/shop-by-catagory/sbc-home_8532312c-cad4-4121-a657-3206a4af4eae.webp";
+import img9 from "../../public/assets/shop-by-catagory/sbc-accessories_7ae208fe-1be3-4922-add6-3b7956108ce1.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

@@ -7,14 +7,14 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 //whatsnew images
-import WhatsNewImage1 from "../assets/Cicular-images/whats-new-images/what_s-new-_-botanical-bliss.jpg";
-import WhatsNewImage2 from "../assets/Cicular-images/whats-new-images/unstitched-what_s-new_adf1450e-e5a8-4898-b145-1fb4f8768a80.avif";
-import WhatsNewImage3 from "../assets/Cicular-images/whats-new-images/what_s-new-_-mommy-_-me.avif";
-import WhatsNewImage4 from "../assets/Cicular-images/whats-new-images/what_s-new-_-the-resort-edit.avif";
-import WhatsNewImage5 from "../assets/Cicular-images/whats-new-images/what_s-new-_-classic-chikankari.avif";
-import WhatsNewImage6 from "../assets/Cicular-images/whats-new-images/man-what_s-new.jpg";
-import WhatsNewImage7 from "../assets/Cicular-images/whats-new-images/fragrance-what_s-new.avif";
-import WhatsNewImage8 from "../assets/Cicular-images/whats-new-images/whats_new___home_d9857c45-a5ad-4e38-918d-e480d1306f26.avif";
+import WhatsNewImage1 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-botanical-bliss.jpg";
+import WhatsNewImage2 from "../../public/assets/Cicular-images/whats-new-images/unstitched-what_s-new_adf1450e-e5a8-4898-b145-1fb4f8768a80.avif";
+import WhatsNewImage3 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-mommy-_-me.avif";
+import WhatsNewImage4 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-the-resort-edit.avif";
+import WhatsNewImage5 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-classic-chikankari.avif";
+import WhatsNewImage6 from "../../public/assets/Cicular-images/whats-new-images/man-what_s-new.jpg";
+import WhatsNewImage7 from "../../public/assets/Cicular-images/whats-new-images/fragrance-what_s-new.avif";
+import WhatsNewImage8 from "../../public/assets/Cicular-images/whats-new-images/whats_new___home_d9857c45-a5ad-4e38-918d-e480d1306f26.avif";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

@@ -1,12 +1,12 @@
 import React from "react";
-import hero1 from "../assets/hero-section-images/hero1.webp";
-import hero2 from "../assets/hero-section-images/hero2.webp";
-import hero3 from "../assets/hero-section-images/hero3.webp";
-import hero4 from "../assets/hero-section-images/hero4.webp";
-import hero5 from "../assets/hero-section-images/hero1-mobile.webp";
-import hero6 from "../assets/hero-section-images/hero2-mobile.webp";
-import hero7 from "../assets/hero-section-images/hero3-mobile.webp";
-import hero8 from "../assets/hero-section-images/hero4-mobile.webp";
+import hero1 from "../../public/assets/hero-section-images/hero1.webp";
+import hero2 from "../../public/assets/hero-section-images/hero2.webp";
+import hero3 from "../../public/assets/hero-section-images/hero3.webp";
+import hero4 from "../../public/assets/hero-section-images/hero4.webp";
+import hero5 from "../../public/assets/hero-section-images/hero1-mobile.webp";
+import hero6 from "../../public/assets/hero-section-images/hero2-mobile.webp";
+import hero7 from "../../public/assets/hero-section-images/hero3-mobile.webp";
+import hero8 from "../../public/assets/hero-section-images/hero4-mobile.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import {
