@@ -37,7 +37,7 @@ function MobNavBarLinks({ showmenuicon, setShowMenuIcon }) {
           data-aos="fade-right"
           className="flex w-[94vw] h-[100vh] absolute top-0 left-0 z-50 uppercase overflow-y-scroll  lg:hidden"
         >
-          <div className="flex flex-col justify-start items-center gap-6 m-0  py-4 text-center max-auto h-[100%] z-50 bg-[#fff] w-[80vw] ">
+          <div className="flex flex-col justify-start items-center gap-12 m-0  py-4 text-center max-auto h-[100%] z-50 bg-[#fff] w-[80vw] ">
             <div className="flex gap-3 w-[80%]">
               <div className="w-[33%] h-[80px] flex flex-col gap-1 justify-center items-center border-[1px] border-[#000] rounded-lg">
                 <FaRegCircleUser size={40} />
@@ -52,7 +52,7 @@ function MobNavBarLinks({ showmenuicon, setShowMenuIcon }) {
                 <p className="text-[8px] font-bold">STORES</p>
               </div>
             </div>
-            <div className="bg-[#fff] flex flex-col justify-center items-center m-0 gap-8 text-center w-[80vw] ">
+            <div className="bg-[#fff] flex flex-col justify-center items-center m-0 gap-10 text-center w-[80vw] ">
               {/* new in */}
               <div
                 className={
