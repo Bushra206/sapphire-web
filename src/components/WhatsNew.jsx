@@ -157,19 +157,16 @@ function WhatsNew() {
                       className="circular-slider-image border-2 rounded-full w-[92px] h-[92px] sm:w-[120px] sm:h-[120px]"
                       src={item.img}
                       alt=""
-                      loading="lazy"
                       data-aos="fade-up"
                     />
                   </a>
-                  <a href="">
-                    <p
-                      className="cstm-title-whats-new m-0 p-0 text-[12px] text-[#000] leading-5 w-[92px] h-[43px] sm:w-[120px] sm:h-[32px]"
-                      data-aos="fade-up"
-                    >
-                      {item.title_html}
-                      {/* {WhatsNew[0].title_html}{{ __html: WhatsNew[0].title_html }} */}
-                    </p>
-                  </a>
+                  <p
+                    className="cstm-title-whats-new m-0 p-0 text-[12px] text-[#000] leading-5 w-[92px] h-[43px] sm:w-[120px] sm:h-[32px]"
+                    data-aos="fade-up"
+                  >
+                    {item.title_html}
+                    {/* {WhatsNew[0].title_html}{{ __html: WhatsNew[0].title_html }} */}
+                  </p>
                 </div>
               </SwiperSlide>
             );
