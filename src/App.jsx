@@ -117,8 +117,8 @@ const App = () => {
               <div className={showmenuicon && "fixed"}>
                 <Hero />
                 <WhatsNew />
-                {/* <ShopByCatagory />
-                <Trending /> */}
+                <ShopByCatagory />
+                <Trending />
               </div>
             }
           />
