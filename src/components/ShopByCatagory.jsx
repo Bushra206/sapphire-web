@@ -1,7 +1,14 @@
 // Import Swiper React components
 import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y,Autoplay,Zoom } from 'swiper/modules';
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+  Zoom,
+} from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -23,7 +30,7 @@ import "aos/dist/aos.css";
 let ShopByCatagory = () => {
   let catagory_data = [
     {
-      img:img1,
+      img: img1,
       title: "UNSTITCHED",
     },
     {
@@ -64,9 +71,9 @@ let ShopByCatagory = () => {
     window.addEventListener("load", () => {
       AOS.init({
         //   disable: "phone",
-        offset:70,
+        offset: 70,
         duration: 700,
-        delay:100
+        delay: 100,
         //   easing: "ease-out-cubic",
       });
     });
@@ -74,55 +81,58 @@ let ShopByCatagory = () => {
 
   return (
     <div className=" bg-[#fff] pb-14  text-center flex flex-col justify-center items-center w-full ">
-    <h3 data-aos="fade-up" className=" capitalize  leading-8 font-medium tablet:font-semibold mobile:text-1xl tablet:text-2xl sm:text-[24px] min-w-[25%] mb-10 pb-[2px] border border-b-[2px] border-x-0 border-t-0 outline-none">
-    SHOP BY CATEGORY
-    </h3>
-    <Swiper className="w-full"
-    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay,Zoom]}
-      spaceBetween={6} // default space between slides
-      slidesPerView="auto"
-      // autoplay={{
-      //   delay:3000, // Slide will change every 3 seconds
-      //   disableOnInteraction: false, // Keeps autoplay running even after user interaction
-      // }}
-      loop
-      navigation
-      zoom
-    //   hashNavigatio= {
-    //     replaceState= true
-    //   }
+      <h3
+        data-aos="fade-up"
+        className=" capitalize  leading-8 font-medium tablet:font-semibold mobile:text-1xl tablet:text-2xl sm:text-[24px] min-w-[25%] mb-10 pb-[2px] border border-b-[2px] border-x-0 border-t-0 outline-none"
+      >
+        SHOP BY CATEGORY
+      </h3>
+      <Swiper
+        className="w-full"
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Zoom]}
+        spaceBetween={6} // default space between slides
+        slidesPerView="auto"
+        // autoplay={{
+        //   delay:3000, // Slide will change every 3 seconds
+        //   disableOnInteraction: false, // Keeps autoplay running even after user interaction
+        // }}
+        loop
+        navigation
+        zoom
+        //   hashNavigatio= {
+        //     replaceState= true
+        //   }
 
-    grabCursor={true}
-      breakpoints={{
-        md: {
-          slidesPerView: 4, // show 4 slides on medium screens
-          spaceBetween: 6, // keep space between slides to 6
-        },
-        iphone: {
-          slidesPerView: 2, // show 2 slides on small screens
-          spaceBetween: 6, // keep space between slides to 6
-        },
-      }}
-    >
-      {catagory_data.map((data, index) => {
-        return (
-          <SwiperSlide key={index} className="w-1/2 md:w-1/4">
-            <div className="flex flex-col gap-3" data-aos="fade-up">
-              <a href="">
-                <img src={data.img} alt="" className="" />
-              </a>
-              <a
-                href=""
-                className=" text-[#222] text-center text-[14px] font-semibold leading-[16px]"
-
-              >
-                {data.title}
-              </a>
-            </div>
-          </SwiperSlide>
-        );
-      })}
-      {/* <SwiperSlide>Slide 1</SwiperSlide>
+        grabCursor={true}
+        breakpoints={{
+          md: {
+            slidesPerView: 4, // show 4 slides on medium screens
+            spaceBetween: 6, // keep space between slides to 6
+          },
+          iphone: {
+            slidesPerView: 2, // show 2 slides on small screens
+            spaceBetween: 6, // keep space between slides to 6
+          },
+        }}
+      >
+        {catagory_data.map((data, index) => {
+          return (
+            <SwiperSlide key={index} className="w-1/2 md:w-1/4">
+              <div className="flex flex-col gap-3" data-aos="fade-up">
+                <a href="">
+                  <img src={data.img} alt="" className="" />
+                </a>
+                <a
+                  href=""
+                  className=" text-[#222] text-center text-[14px] font-semibold leading-[16px]"
+                >
+                  {data.title}
+                </a>
+              </div>
+            </SwiperSlide>
+          );
+        })}
+        {/* <SwiperSlide>Slide 1</SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>
@@ -137,14 +147,8 @@ let ShopByCatagory = () => {
             </div>
             //{" "}
           </SwiperSlide>*/}
-
-
-    </Swiper>
-
-
-
-
-  </div>
+      </Swiper>
+    </div>
   );
 };
 

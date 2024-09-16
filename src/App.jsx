@@ -112,7 +112,6 @@ const App = () => {
 
         <Routes>
           <Route
-           
             path="/"
             element={
               <div className={showmenuicon && "fixed"}>

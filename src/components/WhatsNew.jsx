@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -6,15 +6,56 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
-//whatsnew images
-import WhatsNewImage1 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-botanical-bliss.jpg";
-import WhatsNewImage2 from "../../public/assets/Cicular-images/whats-new-images/unstitched-what_s-new_adf1450e-e5a8-4898-b145-1fb4f8768a80.avif";
-import WhatsNewImage3 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-mommy-_-me.avif";
-import WhatsNewImage4 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-the-resort-edit.avif";
-import WhatsNewImage5 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-classic-chikankari.avif";
-import WhatsNewImage6 from "../../public/assets/Cicular-images/whats-new-images/man-what_s-new.jpg";
-import WhatsNewImage7 from "../../public/assets/Cicular-images/whats-new-images/fragrance-what_s-new.avif";
-import WhatsNewImage8 from "../../public/assets/Cicular-images/whats-new-images/whats_new___home_d9857c45-a5ad-4e38-918d-e480d1306f26.avif";
+// //whatsnew images
+// import WhatsNewImage1 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-botanical-bliss.jpg";
+// import WhatsNewImage2 from "../../public/assets/Cicular-images/whats-new-images/unstitched-what_s-new_adf1450e-e5a8-4898-b145-1fb4f8768a80.avif";
+// import WhatsNewImage3 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-mommy-_-me.avif";
+// import WhatsNewImage4 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-the-resort-edit.avif";
+// import WhatsNewImage5 from "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-classic-chikankari.avif";
+// import WhatsNewImage6 from "../../public/assets/Cicular-images/whats-new-images/man-what_s-new.jpg";
+// import WhatsNewImage7 from "../../public/assets/Cicular-images/whats-new-images/fragrance-what_s-new.avif";
+// import WhatsNewImage8 from "../../public/assets/Cicular-images/whats-new-images/whats_new___home_d9857c45-a5ad-4e38-918d-e480d1306f26.avif";
+
+// const WhatsNewImage1 = React.lazy(() =>
+//   import(
+//     "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-botanical-bliss.jpg"
+//   )
+// );
+// const WhatsNewImage2 = React.lazy(() =>
+//   import(
+//     "../../public/assets/Cicular-images/whats-new-images/unstitched-what_s-new_adf1450e-e5a8-4898-b145-1fb4f8768a80.avif"
+//   )
+// );
+// const WhatsNewImage3 = React.lazy(() =>
+//   import(
+//     "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-mommy-_-me.avif"
+//   )
+// );
+// const WhatsNewImage4 = React.lazy(() =>
+//   import(
+//     "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-the-resort-edit.avif"
+//   )
+// );
+// const WhatsNewImage5 = React.lazy(() =>
+//   import(
+//     "../../public/assets/Cicular-images/whats-new-images/what_s-new-_-classic-chikankari.avif"
+//   )
+// );
+// const WhatsNewImage6 = React.lazy(() =>
+//   import(
+//     "../../public/assets/Cicular-images/whats-new-images/man-what_s-new.jpg"
+//   )
+// );
+// const WhatsNewImage7 = React.lazy(() =>
+//   import(
+//     "../../public/assets/Cicular-images/whats-new-images/fragrance-what_s-new.avif"
+//   )
+// );
+// const WhatsNewImage8 = React.lazy(() =>
+//   import(
+//     "../../public/assets/Cicular-images/whats-new-images/whats_new___home_d9857c45-a5ad-4e38-918d-e480d1306f26.avif"
+//   )
+// );
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -33,7 +74,7 @@ function WhatsNew() {
 
   let WhatsNew_data = [
     {
-      img: WhatsNewImage1,
+      img: "/assets/Cicular-images/whats-new-images/what_s-new-_-botanical-bliss.jpg",
       title_html: (
         <div>
           Botanical Bliss <br /> Ready to Wear
@@ -41,7 +82,7 @@ function WhatsNew() {
       ),
     },
     {
-      img: WhatsNewImage2,
+      img: "/assets/Cicular-images/whats-new-images/unstitched-what_s-new_adf1450e-e5a8-4898-b145-1fb4f8768a80.avif",
       title_html: (
         <div>
           Signature <br /> Unstitched
@@ -49,38 +90,38 @@ function WhatsNew() {
       ),
     },
     {
-      img: WhatsNewImage3,
+      img: "/assets/Cicular-images/whats-new-images/what_s-new-_-mommy-_-me.avif",
       title_html: <div>Mommy &amp; Me</div>,
     },
-    {
-      img: WhatsNewImage4,
-      title_html: (
-        <div>
-          The Resort Edit <br /> WEST
-        </div>
-      ),
-    },
-    {
-      img: WhatsNewImage5,
-      title_html: (
-        <div>
-          Chikankari <br /> Ready to Wear
-        </div>
-      ),
-    },
-    {
-      img: WhatsNewImage6,
-      title_html: (
-        <div>
-          Men's Stitched <br /> Summer New Arrivals
-        </div>
-      ),
-    },
-    {
-      img: WhatsNewImage7,
-      title_html: <div>Fragrances</div>,
-    },
-    { img: WhatsNewImage8, title_html: <div>Home</div> },
+    // {
+    //   img: "WhatsNewImage4",
+    //   title_html: (
+    //     <div>
+    //       The Resort Edit <br /> WEST
+    //     </div>
+    //   ),
+    // },
+    // {
+    //   img: WhatsNewImage5,
+    //   title_html: (
+    //     <div>
+    //       Chikankari <br /> Ready to Wear
+    //     </div>
+    //   ),
+    // },
+    // {
+    //   img: WhatsNewImage6,
+    //   title_html: (
+    //     <div>
+    //       Men's Stitched <br /> Summer New Arrivals
+    //     </div>
+    //   ),
+    // },
+    // {
+    //   img: WhatsNewImage7,
+    //   title_html: <div>Fragrances</div>,
+    // },
+    // { img: WhatsNewImage8, title_html: <div>Home</div> },
   ];
 
   return (
@@ -116,6 +157,7 @@ function WhatsNew() {
                       className="circular-slider-image border-2 rounded-full w-[92px] h-[92px] sm:w-[120px] sm:h-[120px]"
                       src={item.img}
                       alt=""
+                      loading="lazy"
                       data-aos="fade-up"
                     />
                   </a>
