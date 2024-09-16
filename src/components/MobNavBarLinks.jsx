@@ -35,7 +35,7 @@ function MobNavBarLinks({ showmenuicon, setShowMenuIcon }) {
       {showmenuicon && (
         <div
           data-aos="fade-right"
-          className="flex w-[94vw] absolute top-0 left-0 z-50 uppercase overflow-y-scroll  lg:hidden"
+          className="flex w-[94vw] h-[100vh] absolute top-0 left-0 z-50 uppercase overflow-y-scroll  lg:hidden"
         >
           <div className="flex flex-col justify-center items-center gap-6 m-0  py-4 text-center max-auto h-[100%] z-50 bg-[#fff] w-[80vw] ">
             <div className="flex gap-3 w-[80%]">
