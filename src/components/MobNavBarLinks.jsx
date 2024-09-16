@@ -535,7 +535,7 @@ function MobNavBarLinks({ showmenuicon, setShowMenuIcon }) {
               )}
             </div>
 
-            <div className="flex flex-col gap-2 items-start w-[85%] max-auto">
+            <div className="flex flex-col gap-6 items-start w-[85%] max-auto bg-[#fff] z-50">
               <p className="text-[12px] font-bold">Get Exclusive updates:</p>
               <div className="relative">
                 <input
