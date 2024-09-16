@@ -40,8 +40,9 @@ function MobNavBar({ showmenuicon, setShowMenuIcon }) {
                 <TfiTruck />
               </div>
               <div className="icon_wrapper relative">
-                <MdOutlineShoppingBag />
-                <CartCountBadge />
+                <a href="/cart"> <MdOutlineShoppingBag /></a>
+                <a href="/cart"> <CartCountBadge /></a>
+
               </div>
             </div>
           </div>
