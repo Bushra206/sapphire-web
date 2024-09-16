@@ -6,11 +6,9 @@ import Aos from "aos";
 
 export default function LazyComponent() {
   useEffect(() => {
-    window.addEventListener("load", () => {
       AOS.init({
         duration: 700,
       });
-    });
   }, []);
   return (
     <div

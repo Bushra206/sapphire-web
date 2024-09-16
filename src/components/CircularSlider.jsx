@@ -20,14 +20,12 @@ import "aos/dist/aos.css";
 
 function CircularSlider({ heading, data, gapbtw }) {
   useEffect(() => {
-    window.addEventListener("load", () => {
       AOS.init({
         //   disable: "phone",
         offset: 70,
         duration: 500,
         delay: 100,
         //   easing: "ease-out-cubic",
-      });
     });
   }, []);
 

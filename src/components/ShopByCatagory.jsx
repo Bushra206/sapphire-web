@@ -68,14 +68,12 @@ let ShopByCatagory = () => {
   ];
 
   useEffect(() => {
-    window.addEventListener("load", () => {
-      AOS.init({
-        //   disable: "phone",
-        offset: 70,
-        duration: 700,
-        delay: 100,
-        //   easing: "ease-out-cubic",
-      });
+    AOS.init({
+      //   disable: "phone",
+      offset: 70,
+      duration: 700,
+      delay: 100,
+      //   easing: "ease-out-cubic",
     });
   }, []);
 

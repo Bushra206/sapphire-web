@@ -68,14 +68,12 @@ let Cards = ({ catagory_data }) => {
   // ];
 
   useEffect(() => {
-    window.addEventListener("load", () => {
-      AOS.init({
-        //   disable: "phone",
-        offset: 70,
-        duration: 700,
-        delay: 100,
-        //   easing: "ease-out-cubic",
-      });
+    AOS.init({
+      //   disable: "phone",
+      offset: 70,
+      duration: 700,
+      delay: 100,
+      //   easing: "ease-out-cubic",
     });
   }, []);
   const location = useLocation();
@@ -96,10 +94,12 @@ let Cards = ({ catagory_data }) => {
 
               <div className="dress-detail flex justify-between items-center">
                 <div className="dress-dcrp flex flex-col text-left w-[55%]">
-                  <a  href={`/singleproduct/${data.id}`}>
+                  <a href={`/singleproduct/${data.id}`}>
                     <h5 className="text-xs font-semibold">{data.title}</h5>
                   </a>
-                  <p className="text-[9px] mobile:text-[10px] tablet:text-[12px]">{data.collection}</p>
+                  <p className="text-[9px] mobile:text-[10px] tablet:text-[12px]">
+                    {data.collection}
+                  </p>
                   <p className="text-xs">
                     Rs.
                     {data.price
@@ -119,8 +119,6 @@ let Cards = ({ catagory_data }) => {
         );
       })}
     </div>
-
-
   );
 };
 
