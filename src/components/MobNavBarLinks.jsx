@@ -35,9 +35,9 @@ function MobNavBarLinks({ showmenuicon, setShowMenuIcon }) {
       {showmenuicon && (
         <div
           data-aos="fade-right"
-          className=" py-[20px] border-r-[1px]  border-r-[#000] flex w-[94vw] h-[100vh] absolute top-0 left-0 z-50 uppercase   lg:hidden"
+          className="   flex w-[94vw] h-[100vh] absolute top-0 left-0 z-50 uppercase   lg:hidden"
         >
-          <div className="flex flex-col justify-start items-center gap-12 m-0  py-4 text-center max-auto h-[100%] z-50 bg-[#fff] w-[80vw] overflow-y-scroll ">
+          <div className="py-[20px] h-[100vh] flex flex-col justify-start items-center gap-12 m-0  text-center max-auto  z-50 bg-[#fff] w-[80vw] overflow-y-scroll ">
             <div className="flex gap-3 w-[80%]">
               <div className="w-[33%] h-[80px] flex flex-col gap-1 justify-center items-center border-[1px] border-[#000] rounded-lg">
                 <FaRegCircleUser size={40} />
